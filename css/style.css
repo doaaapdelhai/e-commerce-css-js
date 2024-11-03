@@ -19,8 +19,13 @@
 body{
     background: #f5f6f9;
     margin-top: 180px;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 
+}
+
+.name_user{
+    margin-top: 20px;
+    /* color: black; */
 }
 h1,h2,h3,h4,h5,h6{
     color: var(--dark-color);
@@ -350,7 +355,7 @@ header .links .login_signup a {
 .slider .container {
     display: flex;
     justify-content: space-between;
-    margin-top: -20px;
+    margin-top: -1px;
 }
 
 .slider .container .side_bar {
@@ -1676,3 +1681,30 @@ header .links ul .btn_close_menu{
         font-size: 20px;
     }
 }
+
+
+
+#welcome-message {
+    color: #4CAF50; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    text-align: center; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease; 
+}
+
+#welcome-message:hover {
+    background-color: #e0f7fa;
+}
+.large-logout {
+    padding: 10px 20px;
+    background-color: red; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+

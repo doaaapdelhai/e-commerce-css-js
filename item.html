@@ -8,13 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- Link Swiper's CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="css/all.min.css">
-
-
 </head>
 <body>
     <!-- Header -->
@@ -25,9 +19,8 @@
                 <input type="search" placeholder="Search for products...">
                 <button type="submit">Search</button> 
             </form>
-        
             <div class="cart-header">
-                <div  onclick="open_cart()" class="icon_cart">
+                <div onclick="open_cart()" class="icon_cart">
                     <i class="fa-solid fa-bag-shopping"></i>
                     <span class="count_item">0</span>
                 </div>
@@ -37,10 +30,9 @@
                 </div>
             </div>
         </div>
-
         <nav>
             <div class="links container">
-                <i  onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+                <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
                 <ul id="menu">
                     <span onclick="close_menu()" class="bg-overly"></span>
                     <i onclick="close_menu()" class="fa-regular fa-circle-xmark btn_close_menu"></i>
@@ -53,242 +45,115 @@
                 <div class="login_signup">
                     <a href="login.html">login <i class="fa-solid fa-right-to-bracket"></i></a>
                     <a href="register.html">sign up <i class="fa-solid fa-user-plus"></i></a>
+                    <p class="name_user" id="welcome-message"></p>
                 </div>
             </div>
         </nav>
     </header>
-         <!-- Cart Section -->
-         <div class="cart  "> 
-            <div class="top_cart">
-                <h3>My Cart <span class="count_item_cart">(2 items in Cart)</span></h3>
-                <span onclick="close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
-            </div> 
-        
-            <div class="items_in_cart">
-
-               
-              
-             
-            </div> 
-        
-            <div class="bottom_Cart">
-                <div class="total">
-                    <p>Cart subtotal</p>
-                    <p class="price_cart_total">$280</p> 
+    <!-- Item Details Section -->
+    <div class="item_detail">
+        <div class="container">
+            <div class="img_item">
+                <div class="big_img">
+                    <img id="bigImage" src="img/product/product-1.jpg" alt="">
                 </div>
-        
-                <div class="button_Cart">
-                    <a href="checkOut.html" class="btn_cart">Proceed to Checkout</a>
-                    <button onclick="close_cart()"; class="btn_cart trans_bg">Shop More</button>
+                <div class="sm_imgs">
+                    <img onclick="changeItemImg(this.src)" src="img/product/product-1.jpg" alt="">
+                    <img onclick="changeItemImg(this.src)" src="img/product/product-2.jpg" alt="">
                 </div>
             </div>
-        </div>
-          <!---------item detils page---------  -->
-          <div class="item_detail">
-            <div class="container">
-
-
-
-                <div class="img_item">
-                    <div class="big_img">
-                        <img id="bigImage" src="img/product/product-1.jpg" alt="">
-                    </div>
-                    <div class="sm_imgs">
-                        <img onclick="changeItemImg(this.src)" src="img/product/product-1.jpg" alt="">
-                        <img onclick="changeItemImg(this.src)" src="img/product/product-1.jpg" alt="">
-                        <img onclick="changeItemImg(this.src)" src="img/product/product-2.jpg" alt="">
-                        <img onclick="changeItemImg(this.src)" src="img/product/product-2.jpg" alt="">
-                    </div>
+            <div class="details_item">
+                <h1 class="name"> Original Mobile Androide Dual SIM Smart Phone 63 </h1>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
-
-
-
-                <div class="details_item">
-                    <h1 class="name"> Original Mobile Androide Dul SIM Smart Phone 63 </h1>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="price">
-                        <p><span>$120.00</span></p>
-                        <p class="old_price">$170.00</p>
-                    </div>
-                    <h5>Avaailability : <span>In Stock</span></h5>
-                    <h5>SXU : <span>samsung C49289 , 456$ , Debehams Plus</span></h5>
-                    <p class="text_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa doloremque reiciendis dolorum voluptate sunt ex labore qui quasi id. Quo harum voluptate nisi non animi eius, est corporis totam eligendi cumque ipsa dolorum suscipit? Ducimus nemo tempore harum alias molestias architecto accusantium suscipit, odio obcaecati modi, sunt dolorum ipsa.
-                    </p>
-                    <h4>Hurry Up! Only 98 products left in stock</h4>
-                    <button>Add To Cart  <i class="fa-solid fa-cart-arrow-down"></i> </button>
-
-                    <div class="icons">
-                        <span> <i class="fa-regular fa-heart"></i></span>
-                        <span> <i class="fa-solid fa-sliders"></i></span>
-                        <span> <i class="fa-solid fa-print"></i></span>
-                        <span> <i class="fa-solid fa-share-nodes"></i></span>
-                        
-                       
-                    </div>
+                <div class="price">
+                    <p><span>$120.00</span></p>
+                    <p class="old_price">$170.00</p>
+                </div>
+                <h5>Avaailability : <span>In Stock</span></h5>
+                <h5>SXU : <span>samsung C49289 , 456$ , Debehams Plus</span></h5>
+                <p class="text_p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h4>Hurry Up! Only 98 products left in stock</h4>
+                <button>Add To Cart  <i class="fa-solid fa-cart-arrow-down"></i> </button>
+                <div class="icons">
+                    <span> <i class="fa-regular fa-heart"></i></span>
+                    <span> <i class="fa-solid fa-sliders"></i></span>
+                    <span> <i class="fa-solid fa-print"></i></span>
+                    <span> <i class="fa-solid fa-share-nodes"></i></span>
                 </div>
             </div>
-
-          </div>
-       
-          <!-- slider sale produts -->
-          <section class="slide slide_sale">
-    <div class="container">
-        <div class="sale_sec mySwiper">
-            <div class="top_slide">
-                <h2>On Sale<span> Product</span></h2>
-            </div>
-            <div id="swiper_items_sale" class="swiper-wrapper">
-
-            </div>
-
-            <div class="swiper-button-next btn_Swip"></div>
-            <div class="swiper-button-prev btn_Swip"></div>
         </div>
     </div>
-         </section>
-         <!-- -------------  banner tow big img  ----------- -->
-         <section class="banner bannar_big">
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img src="img/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+
+                    <div class="text">
+                        <h5>Hotline Free 24 / 24</h5>
+                        <h6>(+100) 123 456 789</h6>
+                    </div>
+                </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptates!</p>
+                </div>
+
+            <div class="row">
+                <h4>FAQs & Help</h4>
+                <div class="links">
+                    <a href="#">F . A . Q "S</a>
+                    <a href="#">Crdering Tracking</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Events</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Shipping & Delivery</h4>
+                <div class="links">
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Discount</a>
+                    <a href="#">Payment & Shipping</a>
+                    <a href="#">Estimated Delivery</a>
+                    <a href="#">Shipping Guide</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Information</h4>
+                <div class="links">
+                    <a href="#">Popular</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="bootom_footer">
             <div class="container">
-
-              
-                <div class="banner_img">
-                    <div class="glass_hover"></div>
-                        <a href="#"> </a>
-                            <img src="img/banner/banner-4.jpg" alt="img">
-                       
-                    </div>
-                
-
-                <div class="banner_img">
-                    <div class="glass_hover"></div>
-                        <a href="#"> </a>
-                            <img src="img/banner/banner-5.jpg" alt="img">
-                       
-                    </div>
-                
-
-            </div>
-          </section>
-
-           <!-- -------------------------------- -->
-           <div class="back_to_top">
-                <p>back to top<span> <i class="fa-solid fa-circle-arrow-up"></i> </span>
-                </p>
-            </div>
-            <!-- --------------footer------------- -->
-             <footer>
-                <div class="container">
-                    <div class="big_row">
-                        <img src="img/logo-white.png" alt="">
-                        <div class="hotline">
-                            <i class="fa-solid fa-headset"></i>
-
-                            <div class="text">
-                                <h5>Hotline Free 24 / 24</h5>
-                                <h6>(+100) 123 456 789</h6>
-                            </div>
-                        </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptates!</p>
-                        </div>
-
-                    <div class="row">
-                        <h4>FAQs & Help</h4>
-                        <div class="links">
-                            <a href="#">F . A . Q "S</a>
-                            <a href="#">Crdering Tracking</a>
-                            <a href="#">Contacts</a>
-                            <a href="#">Events</a>
-                            <a href="#">Help Center</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h4>Shipping & Delivery</h4>
-                        <div class="links">
-                            <a href="#">Delivery Information</a>
-                            <a href="#">Discount</a>
-                            <a href="#">Payment & Shipping</a>
-                            <a href="#">Estimated Delivery</a>
-                            <a href="#">Shipping Guide</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h4>Information</h4>
-                        <div class="links">
-                            <a href="#">Popular</a>
-                            <a href="#">Our Services</a>
-                            <a href="#">Your Account</a>
-                            <a href="#">Privacy Policy</a>
-                            <a href="#">Terms & Condition</a>
-                        </div>
-                    </div>
-
-
-
+                <p> Copyright &copy; <span>Topico.</span>all right reserved </p>
+                <p class="name_c">@made by <span>doaaabdelhai</span> ..</p>
+                <div class="payment_img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment41.png" alt="">
                 </div>
-
-                <div class="bootom_footer">
-                    <div class="container">
-                        <p> Copyright &copy; <span>Topico.</span>all right reserved </p>
-                        <p class="name_c">@made by <span>doaaabdelhai</span> ..</p>
-                        <div class="payment_img">
-                            <img src="img/payment-1.png" alt="">
-                            <img src="img/payment-2.png" alt="">
-                            <img src="img/payment-3.png" alt="">
-                            <img src="img/payment41.png" alt="">
-                        </div>
-                    </div>
-                </div>
-             </footer>
-             <!-- ----------------- -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- swiper js -->
+            </div>
+        </div>
+     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-
-    <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/items_home.js"></script>
-
-    </body>
-    </html>
+</body>
+</html>
